@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
-# loops from 1 to 10 and displays
-#+ "bad luck" for the 4th loop iteration
-#+ "good luck" for the 8th loop iteration
-#+ "Holberton School" for the other iterations
+#Write a Bash script that displays numbers from 1 to 20 and:
 
-COUNTER=1
-while [ "$COUNTER" -le 10 ]; do
-    if [ $COUNTER -eq 4 ]; then
+index=1
+
+while ((index <= 10));
+do
+    if ((index==4));
+    then
 	echo "bad luck"
-    elif [ $COUNTER -eq 8 ]; then
+    elif ((index==8));
+    then
 	echo "good luck"
     else
-	echo "Best School"
+	echo "Holberton School"
     fi
-    let COUNTER=COUNTER+1
+    ((index++))
 done

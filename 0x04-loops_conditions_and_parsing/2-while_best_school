@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times
+#Write a Bash script that displays Best School 10 times.
 
-COUNTER=1
-while [ "$COUNTER" -le 10 ]; do
-	echo "Best School"
-	let COUNTER=COUNTER+1
+index=0
+
+while ((index < 10));
+do
+    echo "Holberton School"
+    ((index++))
 done
